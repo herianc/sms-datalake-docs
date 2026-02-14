@@ -44,8 +44,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -232,7 +232,7 @@
   
     
   
-  Guia de desenvolvedores
+  Guia de Desenvolvedores
 
         </a>
       </li>
@@ -840,7 +840,7 @@
   <span class="md-ellipsis">
     
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
     
@@ -856,7 +856,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
           </label>
@@ -999,17 +999,17 @@
 
   <h1>Ambiente Sandbox</h1>
 
-<h2 id="o-que-e-o-sandbox">O que é o Sandbox?</h2>
+<h2 id="o-que-e-o-sandbox"><strong>O que é o Sandbox?</strong></h2>
 <p>O Sandbox, ou Caixa de Areia  , é uma área dentro do nosso BigQuery onde os usuários podem criar novos conjuntos de dados, sejam tabelas materializadas ou views, a partir de upload de arquivos, conexão com com planilhas do Google Sheets, por instrução SQL ou qualquer outra linguagem de programação a partir de bibliotecas específicas. Nele também é possível consultar e mesclar os dados que estão em produção sem o risco de qualquer tipo consequência nesse ambiente.</p>
 <p>O ambiente do Sandbox dentro do BigQuery é destinado aos atores internos e externos à Secretaria de Saúde para testarem com autonomia e agilidade. É um espaço seguro onde os analistas e cientistas de dados podem experimentar com os dados, testar novas ideias ou modelos sem o risco de afetar os dados principais ou os sistemas de produção.</p>
 <p>Pense nisso como um laboratório onde você pode trabalhar com cópias dos dados reais ou com dados sintéticos para desenvolver novos algoritmos, relatórios ou visualizações.</p>
 <p>Aqui estão alguns pontos importantes sobre o Sandbox no Data Lake:</p>
 <ol>
-<li>Isolamento: O Sandbox mantém suas experiências separadas do ambiente principal, garantindo que o trabalho regular não seja interrompido.</li>
-<li>Liberdade para inovar: Como é um ambiente controlado, há mais liberdade para tentar coisas novas sem medo de cometer erros que possam ter grandes consequências.</li>
-<li>Desenvolvimento ágil: Ajuda a acelerar o desenvolvimento de projetos de dados, pois as mudanças podem ser feitas e testadas rapidamente.</li>
-<li>Segurança dos dados: Protege os dados sensíveis ou críticos ao permitir que os usuários trabalhem com amostras, versões anonimizadas ou sintéticas dos dados.</li>
-<li>Aprendizado e crescimento: É um ótimo lugar para os membros da equipe melhorarem suas habilidades, pois eles podem aprender fazendo, sem pressão.</li>
+<li><strong>Isolamento</strong>: O Sandbox mantém suas experiências separadas do ambiente principal, garantindo que o trabalho regular não seja interrompido.</li>
+<li><strong>Liberdade para inovar</strong>: Como é um ambiente controlado, há mais liberdade para tentar coisas novas sem medo de cometer erros que possam ter grandes consequências.</li>
+<li><strong>Desenvolvimento ágil</strong>: Ajuda a acelerar o desenvolvimento de projetos de dados, pois as mudanças podem ser feitas e testadas rapidamente.</li>
+<li><strong>Segurança dos dados</strong>: Protege os dados sensíveis ou críticos ao permitir que os usuários trabalhem com amostras, versões anonimizadas ou sintéticas dos dados.</li>
+<li><strong>Aprendizado e crescimento</strong>: É um ótimo lugar para os membros da equipe melhorarem suas habilidades, pois eles podem aprender fazendo, sem pressão.</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
@@ -1022,8 +1022,8 @@ Teste, monitoramento e notificações automáticos: inexistente neste ambiente.
 Caso ocorra alguma indisponibilidade ou erro nos dados, total ou parcial, não haverá qualquer mecanismo de prevenção ou alerta.</p>
 <p>Pelos motivos listados acima, não recomendamos que utilizem o Sandbox como ambiente produtivo. Isto é, não conectem no Sandbox seus reports, dashboards ou modelos de machine learning que irão ser consumidos pelos usuários finais. Pipelines de dados são vivos, inevitavelmente quebrarão e descobrir pelo usuário é uma experiência bem ruim 🫠.
 Quando acreditarem que protótipo atingiu o nível de maturidade para subir para produção. Falem conosco, iremos te ajudar a subir para o ambiente produtivo 🤠. </p>
-<h2 id="como-acessar-o-sandbox">Como acessar o Sandbox?</h2>
-<p>Você pode acessar o Sandbox a partir deste (link)[https://console.cloud.google.com/bigquery?project=rj-sms-sandbox] ou direto dentro BigQuery alterando o projeto que está conectado:</p>
+<h2 id="como-acessar-o-sandbox"><strong>Como acessar o Sandbox?</strong></h2>
+<p>Você pode acessar o Sandbox a partir deste <a href="https://console.cloud.google.com/bigquery?project=rj-sms-sandbox" title="console.cloud.google.com">link</a> ou direto dentro BigQuery alterando o projeto que está conectado:</p>
 <ol>
 <li>Clicar no nome do projeto para abrir a lista de opções disponíveis</li>
 </ol>
@@ -1043,19 +1043,18 @@ Quando acreditarem que protótipo atingiu o nível de maturidade para subir para
 </figure>
 <p>Para adicioná-lo basta seguir as orientações em Primeiros Passos do link abaixo., substituindo o projeto basedosdados por rj-sms:</p>
 <p><img alt="Primeiros Passos" src="https://t9013004335.p.clickup-attachments.com/t9013004335/a441eb37-3a3f-40e6-8fc9-4eab5db7c214/bq_access_project_new.gif" /></p>
-<h2 id="operacoes-basicas">Operações Básicas</h2>
+<h2 id="operacoes-basicas"><strong>Operações Básicas</strong></h2>
 <h3 id="upload-de-dados">Upload de dados</h3>
 <h4 id="1-arquivos-de-texto">1. Arquivos de Texto</h4>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
-<p>⚠️ Atenção: para carregar com sucesso um arquivo no BigQuery é necessário respeitar as limitações da ferramenta para cada tipo de arquivo. Ex:</p>
+<p>Para carregar com sucesso um arquivo no BigQuery é necessário respeitar as limitações da ferramenta para cada tipo de arquivo. Ex:</p>
 <ul>
 <li>caracteres permitidos nos nomes das colunas</li>
 <li>como datas devem ser representadas</li>
-<li>qual caracter deve ser utilizado para definir o início das casas decimais
-Para conhecer sobre essas limitações acessar https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=pt-br, no menu da esquerda selecionar o tipo de arquivo que deseja carregar:</li>
+<li>qual caracter deve ser utilizado para definir o início das casas decimais</li>
 </ul>
-<p>e buscar pela sessão Limitações</p>
+<p>Para conhecer sobre essas limitações acessar a <a href="https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=pt-br" title="https://cloud.google.com/bigquery/docs/">documentação</a>, no menu da esquerda selecionar o tipo de arquivo que deseja carregar e buscar pela sessão Limitações.</p>
 </div>
 
 

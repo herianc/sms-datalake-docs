@@ -44,8 +44,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -232,7 +232,7 @@
   
     
   
-  Guia de desenvolvedores
+  Guia de Desenvolvedores
 
         </a>
       </li>
@@ -799,7 +799,7 @@
   <span class="md-ellipsis">
     
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
     
@@ -815,7 +815,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
           </label>
@@ -957,9 +957,9 @@
 
 
 <h1 id="organizacao-dos-dados-no-data-lake">Organização dos Dados no Data Lake</h1>
-<h2 id="afinal-onde-estao-os-dados">Afinal, onde estão os dados?</h2>
+<h2 id="afinal-onde-estao-os-dados"><strong>Afinal, onde estão os dados?</strong></h2>
 <p>O BigQuery é a ferramenta onde estão guardados nossos dados e que também utilizamos para fazer as consultas SQL. Ele é um serviço de Data Warehouse totalmente gerenciado e altamente escalável oferecido pelo Google Cloud Platform. Ele permite armazenar, consultar e analisar grandes conjuntos de dados de maneira rápida e eficiente.</p>
-<h2 id="organizacao-dos-dados-em-camadas">Organização dos dados em Camadas</h2>
+<h2 id="organizacao-dos-dados-em-camadas"><strong>Organização dos dados em Camadas</strong></h2>
 <p><img alt="Fluxo dos Dados dentro do Data Lake" src="../../assets/fluxo-dados.png" /></p>
 <p>Os dados em nosso BigQuery são organizado seguindo o padrão de design de dados conhecido como arquitetura medalhão. Este padrão consiste em organizar logicamente os dados em um Data Lake, com o objetivo de melhorar incremental e progressivamente a estrutura e qualidade dos dados à medida que eles fluem por cada camada da arquitetura (isto é, entre as tabelas da camada Bronze ⇒ Prata ⇒ Ouro):</p>
 <ol>

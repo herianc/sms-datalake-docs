@@ -44,8 +44,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -232,7 +232,7 @@
   
     
   
-  Guia de desenvolvedores
+  Guia de Desenvolvedores
 
         </a>
       </li>
@@ -727,7 +727,7 @@
   <span class="md-ellipsis">
     
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
     
@@ -743,7 +743,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
           </label>
@@ -1093,7 +1093,7 @@
 
 
 <h1 id="campos">Campos</h1>
-<h2 id="quais-variaveis-manter-quais-adicionar-e-quais-remover">Quais variáveis manter, quais adicionar e quais remover</h2>
+<h2 id="quais-variaveis-manter-quais-adicionar-e-quais-remover"><strong>Quais variáveis manter, quais adicionar e quais remover</strong></h2>
 <p>Mantemos nossas tabelas parcialmente <strong>normalizadas</strong>, e temos regras para quais variáveis incluirmos em produção. Elas são:</p>
 <ul>
 <li>
@@ -1106,12 +1106,20 @@
 <p>Manter todas as chaves primárias que já vem com a tabela, mas (1) adicionar chaves estrangeiras relevantes (ex.  <code>id_municipio</code>) e (2) retirar chaves  estrangeiras irrelevantes (e.g. <code>regiao</code>).</p>
 </li>
 </ul>
-<h2 id="nomeacao-ordenamento-dos-campos">Nomeação &amp; Ordenamento dos Campos</h2>
+<h2 id="nomeacao-ordenamento-dos-campos"><strong>Nomeação &amp; Ordenamento dos Campos</strong></h2>
 <h3 id="ordem-das-colunas">Ordem das colunas</h3>
-<p>A ordem das colunas em tabelas é padronizada para manter uma consistência no Data Lake. Nossas regras são:
-* As chaves sempre são as primeiras colunas: primeiro a chave primária, depois as chaves estrangeira em ordem descendente de abrangência. 
-    * Exemplo de ordem para uma tabela de atendimento: <code>id_atendimento</code>, <code>id_uf</code>, <code>id_municipio</code>, <code>id_cnes</code>, <code>paciente_cpf</code>.
-* Agrupar e ordenar colunas por importância ou temas.</p>
+<p>A ordem das colunas em tabelas é padronizada para manter uma consistência no Data Lake. Nossas regras são:</p>
+<ul>
+<li>
+<p>As chaves sempre são as primeiras colunas: primeiro a chave primária, depois as chaves estrangeira em ordem descendente de abrangência.</p>
+<ul>
+<li>Exemplo de ordem para uma tabela de atendimento: <code>id_atendimento</code>, <code>id_uf</code>, <code>id_municipio</code>, <code>id_cnes</code>, <code>paciente_cpf</code>.</li>
+</ul>
+</li>
+<li>
+<p>Agrupar e ordenar colunas por importância ou temas.</p>
+</li>
+</ul>
 <h3 id="nomeacao-das-colunas">Nomeação das colunas</h3>
 <p>Os campos, de forma geral, deve seguir o seguinte Padrão:</p>
 <p><code>[id_][&lt;entidade&gt;_][&lt;dimensão&gt;][_&lt;unidade&gt;]</code></p>
@@ -1170,19 +1178,19 @@ Por isso adotamos o seguinte tratamento: adiciona*se o prefixo de entidade quand
 <p>A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas Gold, sendo convencionado apenas para os tiers Bronze e Prata os seguintes pontos, do mais abrangente para o mais específico:</p>
 <ul>
 <li>
-<p>Todo campo string não deve iniciar com espaços ou tab (\n), esses devem ser padronizados usando a função TRIM().</p>
+<p>Todo campo string não deve iniciar com espaços ou tab (\n), esses devem ser padronizados usando a função <code>TRIM()</code>.</p>
 </li>
 <li>
-<p>Campos de strings nullables: deverão ser padronizadas utilizando a macro process_null que garante que strings como "NaN" "None" e "" sejam transformadas em em null, segundo o formato do BigQuery.</p>
+<p>Campos de strings <em>nullables</em>: deverão ser padronizadas utilizando a macro <code>process_null</code> que garante que strings como <code>"NaN"</code>, <code>"None"</code> e <code>""</code> sejam transformadas em em <code>null</code>, segundo o formato do BigQuery.</p>
 </li>
 <li>
-<p>Campos numéricos: deverão conter limpeza de caracteres não numéricos segundo a macro clean_numeric_string.</p>
+<p>Campos numéricos: deverão conter limpeza de caracteres não numéricos segundo a macro <code>clean_numeric_string</code>.</p>
 </li>
 <li>
-<p>Campos categóricas: deverão ser padronizadas com inicial maiúscula e resto minúsculo, sem acentos seguindo macro remove_accents_upper e capitalize_first_letter nessa ordem.</p>
+<p>Campos categóricas: deverão ser padronizadas com inicial maiúscula e resto minúsculo, sem acentos seguindo macro <code>remove_accents_upper</code> e <code>capitalize_first_letter</code> nessa ordem.</p>
 </li>
 <li>
-<p>Campos de nome e endereço (ex: nome de estabelecimento, nome próprio e logradouro) devem ser padronizadas com letras maíusculas no inicio de cada nome e preposições em minúscula, sem acentos ou símbolos<em>. Utiliza</em>se as macros remove_accents_upper seguida de proper_estabelecimento ou proper_br. </p>
+<p>Campos de nome e endereço (ex: nome de estabelecimento, nome próprio e logradouro) devem ser padronizadas com letras maíusculas no inicio de cada nome e preposições em minúscula, sem acentos ou símbolos <code>-</code> . Utiliza-se as macros <code>remove_accents_upper</code> seguida de <code>proper_estabelecimento</code> ou <code>proper_br</code>. </p>
 </li>
 <li>
 <p>Em campos de texto livre, mantemos igual aos dados originais.</p>
@@ -1193,7 +1201,7 @@ Por isso adotamos o seguinte tratamento: adiciona*se o prefixo de entidade quand
 </ul>
 <h3 id="formatos-de-valores">Formatos de valores</h3>
 <ul>
-<li><strong>Decimal</strong>: formato americano, i.e <code>.</code> sempre . (ponto) ao invés de <code>,</code> (vírgula).</li>
+<li><strong>Decimal</strong>: formato americano, i.e. sempre <code>.</code> (ponto) ao invés de <code>,</code> (vírgula).</li>
 <li><strong>Data</strong>: <code>YYYY-MM-DD</code></li>
 <li><strong>Horário (24h)</strong>: <code>HH:MM:SS</code></li>
 <li><strong>Datetime (ISO-8601)</strong>: <code>YYYY-MM-DDTHH:MM:SS.sssZ</code></li>
@@ -1202,9 +1210,9 @@ Por isso adotamos o seguinte tratamento: adiciona*se o prefixo de entidade quand
 <li><strong>Booleano</strong>: <code>false</code>/<code>true</code></li>
 <li><strong>Sexo</strong>: Masculino/Feminino</li>
 </ul>
-<h2 id="colunas-de-particionamento-da-tabela">Colunas de Particionamento da Tabela</h2>
+<h2 id="colunas-de-particionamento-da-tabela"><strong>Colunas de Particionamento da Tabela</strong></h2>
 <p>Uma tabela particionada é uma tabela especial dividida em segmentos, chamados de partições, que facilitam o gerenciamento e a consulta de seus dados. Ao dividir uma grande tabela em partições menores, você pode melhorar o desempenho da consulta e pode controlar os custos reduzindo o número de bytes lidos por uma consulta. Por isso, sempre recomendamos que tabelas grandes sejam particionadas. Leia mais 
-a respeito na documentação da Google Cloud.</p>
+a respeito na <a href="https://docs.cloud.google.com/bigquery/docs/partitioned-tables?hl=pt-br" title="BigQuery - Introdução a tabelas particionadas">documentação</a> da Google Cloud.</p>
 <p>Em geral, o particionamento é feito sobre o valors de uma data criando-se três colunas novas cujos nomes são dados por: <code>ano_particao</code>, <code>mes_particao</code>,<code>data_particao</code> e que possuem os respectivos formatos 'YYYY', 'MM', 'YYYY-MM-DD'. </p>
 
 

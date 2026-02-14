@@ -44,8 +44,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -232,7 +232,7 @@
   
     
   
-  Guia de desenvolvedores
+  Guia de Desenvolvedores
 
         </a>
       </li>
@@ -871,7 +871,7 @@
   <span class="md-ellipsis">
     
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
     
@@ -887,7 +887,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Guia de desenvolvedores
+    Guia de Desenvolvedores
   
 
           </label>
@@ -1028,12 +1028,12 @@
 
 
 
-<h1 id="consultas-diretas-no-data-lake">Consultas diretas no Data Lake</h1>
+<h1 id="consultas-diretas-no-data-lake"><strong>Consultas diretas no Data Lake</strong></h1>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>O BigQuery é a ferramenta padrão para acessar os dados no Data Lake. Seu meio de acesso é através de uma interface web onde é possível realizar consultas SQL. A partir dele é possível extrair as informações para outros meios comumente utilizados como planilhas, arquivos de texto como csv, ou até para o Google Drive.</p>
 </div>
-<h2 id="acessando-o-bigquery">Acessando o BigQuery</h2>
+<h2 id="acessando-o-bigquery"><strong>Acessando o BigQuery</strong></h2>
 <p>Para acessar o ambiente basta acessar este <a href="https://console.cloud.google.com/bigquery?project=rj-sms">link</a> e acessar com o usuário e senha que foi habilitado quando seu acesso foi solicitado.  Ao acessar o link você verá esta tela:</p>
 <p><img alt="Página inicial do BigQuery" src="../../assets/acesso-bq.png" /></p>
 <p>Neste botão você poderá alternar entre os ambientes de <code>rj-sms</code> (Produção) e <code>rj-sms-sandbox</code> (Sandbox), confira se esta no ambiente correto antes de iniciar.</p>
@@ -1049,7 +1049,7 @@ seus dados. Ela oferece recursos avançados de edição, realce de sintaxe e aut
 <h3 id="painel-de-visualizacao">Painel de Visualização</h3>
 <p>Logo abaixo da guia de consulta, o painel de visualização exibe os resultados das consultas em formato de tabela, facilitando a análise e a interpretação dos dados.</p>
 <p>Esses elementos combinados oferecem uma experiência completa para consultar, visualizar e gerenciar dados diretamente no BigQuery Studio, proporcionando um ambiente poderoso para análise e tomada de decisões baseadas em dados. </p>
-<h2 id="criando-uma-consulta">Criando uma Consulta</h2>
+<h2 id="criando-uma-consulta"><strong>Criando uma Consulta</strong></h2>
 <p>No Console do BigQuery, clique em "Nova consulta" para abrir o editor de consultas.</p>
 <p>Escreva sua consulta SQL no editor. Por exemplo:</p>
 <div class="admonition info">
@@ -1062,10 +1062,10 @@ seus dados. Ela oferece recursos avançados de edição, realce de sintaxe e aut
 <span class="k">WHERE</span><span class="w"> </span><span class="n">coluna_particao</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">condicao</span>
 </code></pre></div>
 <p><img alt="Editor de Consulta" src="../../assets/acesso-bq-consulta.png" /></p>
-<h2 id="executando-a-consulta">Executando a Consulta</h2>
+<h2 id="executando-a-consulta"><strong>Executando a Consulta</strong></h2>
 <p>Depois de escrever sua consulta, clique em "Executar" ou pressione <strong>Ctrl + Enter</strong> para executá-la.
 Os resultados da consulta serão exibidos na parte inferior do console.</p>
-<h2 id="exportando-dados-no-bigquery">Exportando Dados no BigQuery</h2>
+<h2 id="exportando-dados-no-bigquery"><strong>Exportando Dados no BigQuery</strong></h2>
 <p>Com os resultado da consulta em tela, podemos salvar os dados  localmente nos formatos  CSV (Comma-Separated Values) ou JSON (JavaScript Object Notation) . Uma opção também é levar esses dados para o GCS, nos formatos CSV, JSONL, Planilha do Google ou tabela do BigQuery, como no exemplo a seguir.</p>
 <p>Usando o botão  <mark>SALVAR RESULTADOS</mark>  temos as seguintes opções abaixo.</p>
 <p><img alt="Opções de exportação" src="../../assets/acesso-bq-download-options.png" /></p>
