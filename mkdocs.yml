@@ -2,7 +2,7 @@ site_name: Data Lake SMS Rio
 site_url: https://herianc.github.io/sms-datalake-docs
 nav:
   - Home:
-    - Olá!: index.md
+    - Inicial: index.md
     - Governança: governanca.md
     - Acessos: acessos.md
   - Guia de Uso: 
