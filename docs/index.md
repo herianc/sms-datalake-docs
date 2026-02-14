@@ -1,4 +1,9 @@
-## Bem-vindo à documentação do Data Lake da SMS Rio
+---
+hide:
+  - footer
+---
+
+## **Bem-vindo à documentação do Data Lake da SMS Rio**
 
 
 !!! warning "Página em Construção"
@@ -11,7 +16,7 @@ Queremos convidar você para se juntar a nós! Se tiver alguma dúvida, sugestã
 
 **No Discord**: Se você prefere um bate-papo mais direto, entre no nosso canal no [Discord](https://discord.gg/SRVQPcJb 'Canal do Discord do CIT') do CIT. 
 
-**Por e-mail**: Mande suas perguntas ou ideias para nosso endereço eletrônico: dit-governanca@regulacaoriorj.com.br. Vamos ler com atenção e responder o mais rápido possível.
+**Por e-mail**: Mande suas perguntas ou ideias para nosso endereço eletrônico: [dit-governanca@regulacaoriorj.com.br](mailto:dit-governanca@regulacaoriorj.com.br). Vamos ler com atenção e responder o mais rápido possível.
 
 Não hesite em nos procurar. Sua opinião é muito importante para nós!
 

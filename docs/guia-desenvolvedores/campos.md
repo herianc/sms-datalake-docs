@@ -1,7 +1,7 @@
 
 # Campos
 
-## Quais variáveis manter, quais adicionar e quais remover
+## **Quais variáveis manter, quais adicionar e quais remover**
 
 Mantemos nossas tabelas parcialmente **normalizadas**, e temos regras para quais variáveis incluirmos em produção. Elas são:
 
@@ -12,7 +12,7 @@ Mantemos nossas tabelas parcialmente **normalizadas**, e temos regras para quai
 * Manter todas as chaves primárias que já vem com a tabela, mas (1) adicionar chaves estrangeiras relevantes (ex.  `id_municipio`) e (2) retirar chaves  estrangeiras irrelevantes (e.g. `regiao`).
 
 
-## Nomeação & Ordenamento dos Campos
+## **Nomeação & Ordenamento dos Campos**
 
 ### Ordem das colunas
 
@@ -114,7 +114,7 @@ A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas
 * **Booleano**: `false`/`true`
 * **Sexo**: Masculino/Feminino
 
-## Colunas de Particionamento da Tabela
+## **Colunas de Particionamento da Tabela**
 
 Uma tabela particionada é uma tabela especial dividida em segmentos, chamados de partições, que facilitam o gerenciamento e a consulta de seus dados. Ao dividir uma grande tabela em partições menores, você pode melhorar o desempenho da consulta e pode controlar os custos reduzindo o número de bytes lidos por uma consulta. Por isso, sempre recomendamos que tabelas grandes sejam particionadas. Leia mais 
 a respeito na [documentação](https://docs.cloud.google.com/bigquery/docs/partitioned-tables?hl=pt-br 'BigQuery - Introdução a tabelas particionadas') da Google Cloud.

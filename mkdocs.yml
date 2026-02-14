@@ -1,5 +1,5 @@
 site_name: Data Lake SMS Rio
-
+site_url: https://herianc.github.io/sms-datalake-docs
 nav:
   - Home:
     - Olá!: index.md
@@ -26,23 +26,31 @@ theme:
     primary: blue
     accent: orange
   font:
-    - text: DM Sans
-    - code: JetBrains Mono
+    text: Open Sans
+    code: JetBrains Mono
   language: pt
-  copyright: Copyright &copy; 2026 Data Lake SMS Rio # Exemplo de aviso de direitos autorais
+  copyright: Copyright &copy; 2026 Comitê de Inovação e Tecnologia
   features:
     - header.autohide
     - navigation.sections
     - navigation.top
     - navigation.footer
-    - toc.integrate
-    - content.tabs.link
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.indexes
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
+    - navigation.path
+    - toc.integrate
+    - content.tabs.link
+
+
+plugins:
+  - meta
+  - social:
+      cards_layout_options:
+        font_family: Open Sans
 
 
 extra:
@@ -67,3 +75,4 @@ markdown_extensions:
   - attr_list
   - pymdownx.blocks.caption
   - md_in_html
+  - pymdownx.keys

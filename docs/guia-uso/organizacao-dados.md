@@ -1,10 +1,10 @@
 # Organização dos Dados no Data Lake
 
-## Afinal, onde estão os dados?
+## **Afinal, onde estão os dados?**
 
 O BigQuery é a ferramenta onde estão guardados nossos dados e que também utilizamos para fazer as consultas SQL. Ele é um serviço de Data Warehouse totalmente gerenciado e altamente escalável oferecido pelo Google Cloud Platform. Ele permite armazenar, consultar e analisar grandes conjuntos de dados de maneira rápida e eficiente.
 
-## Organização dos dados em Camadas
+## **Organização dos dados em Camadas**
 
 ![Fluxo dos Dados dentro do Data Lake](../assets/fluxo-dados.png)
 

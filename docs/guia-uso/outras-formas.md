@@ -1,11 +1,22 @@
 # Acessando por outras plataformas
 
-## Python
+## **Sumário**
+
+Nesta seção você aprenderá a acessar o Data Lake através das seguintes feramentas:
+
+- [Python](./outras-formas.md#python)
+- [R](./outras-formas.md#r)
+- [Google Colab](./outras-formas.md#google-colab)
+- [Looker](./outras-formas.md#looker)
+
+
+
+## **Python**
 
 !!! warning "Importante"
     Para conectar o Python você precisará de uma **conta de serviço**, este é um acesso diferente daquele que é dado por padrão ao Data Lake. 
     
-    ??? warning "`credential.json`"
+    ??? abstract "`credential.json`"
         Este acesso tem a forma de um arquivo `.json` com o conteúdo similar a este:
         ```{.json}
         {
@@ -82,7 +93,7 @@ df = query_job.to_dataframe()
 
 --- 
 
-## R
+## **R**
 
 ### Passo a passo para conectar
 
@@ -132,7 +143,7 @@ result <- dbGetQuery(con, query)
 
 ---
 
-## Google Colab
+## **Google Colab**
 
 ### Passo a passo para conectar
 
@@ -177,7 +188,7 @@ df.head()
 
 ---
 
-## Looker
+## **Looker**
 
 !!! tip "Dica"
     O Looker e o BigQuery, utilizam a mesma autenticação. Caso você já tenha acesso ao BigQuery da SMS, basta acessar o [link](https://lookerstudio.google.com/) da ferramenta e seguir os passo abaixo para conectar seus dados.

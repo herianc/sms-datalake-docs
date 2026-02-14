@@ -1,4 +1,4 @@
-## O que é o Sandbox?
+## **O que é o Sandbox?**
 
 O Sandbox, ou Caixa de Areia  , é uma área dentro do nosso BigQuery onde os usuários podem criar novos conjuntos de dados, sejam tabelas materializadas ou views, a partir de upload de arquivos, conexão com com planilhas do Google Sheets, por instrução SQL ou qualquer outra linguagem de programação a partir de bibliotecas específicas. Nele também é possível consultar e mesclar os dados que estão em produção sem o risco de qualquer tipo consequência nesse ambiente.
 
@@ -27,7 +27,7 @@ Pelos motivos listados acima, não recomendamos que utilizem o Sandbox como ambi
 Quando acreditarem que protótipo atingiu o nível de maturidade para subir para produção. Falem conosco, iremos te ajudar a subir para o ambiente produtivo 🤠. 
 
 
-## Como acessar o Sandbox?
+## **Como acessar o Sandbox?**
 Você pode acessar o Sandbox a partir deste [link](https://console.cloud.google.com/bigquery?project=rj-sms-sandbox 'console.cloud.google.com') ou direto dentro BigQuery alterando o projeto que está conectado:
 
 1. Clicar no nome do projeto para abrir a lista de opções disponíveis
@@ -56,7 +56,7 @@ Para adicioná-lo basta seguir as orientações em Primeiros Passos do link abai
 ![Primeiros Passos](https://t9013004335.p.clickup-attachments.com/t9013004335/a441eb37-3a3f-40e6-8fc9-4eab5db7c214/bq_access_project_new.gif)
 
 
-## Operações Básicas
+## **Operações Básicas**
 
 ### Upload de dados
 

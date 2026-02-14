@@ -1,10 +1,10 @@
-# Consultas diretas no Data Lake
+# **Consultas diretas no Data Lake**
 
 !!! note "Nota"
     O BigQuery é a ferramenta padrão para acessar os dados no Data Lake. Seu meio de acesso é através de uma interface web onde é possível realizar consultas SQL. A partir dele é possível extrair as informações para outros meios comumente utilizados como planilhas, arquivos de texto como csv, ou até para o Google Drive.
 
 
-## Acessando o BigQuery
+## **Acessando o BigQuery**
 
 Para acessar o ambiente basta acessar este [link](https://console.cloud.google.com/bigquery?project=rj-sms) e acessar com o usuário e senha que foi habilitado quando seu acesso foi solicitado.  Ao acessar o link você verá esta tela:
 
@@ -36,7 +36,7 @@ Logo abaixo da guia de consulta, o painel de visualização exibe os resultados 
 
 Esses elementos combinados oferecem uma experiência completa para consultar, visualizar e gerenciar dados diretamente no BigQuery Studio, proporcionando um ambiente poderoso para análise e tomada de decisões baseadas em dados. 
 
-## Criando uma Consulta
+## **Criando uma Consulta**
 
 No Console do BigQuery, clique em "Nova consulta" para abrir o editor de consultas.
 
@@ -54,12 +54,12 @@ WHERE coluna_particao >= condicao
 
 ![Editor de Consulta](../assets/acesso-bq-consulta.png)
 
-## Executando a Consulta
+## **Executando a Consulta**
 
-Depois de escrever sua consulta, clique em "Executar" ou pressione **Ctrl + Enter** para executá-la.
+Depois de escrever sua consulta, clique em "Executar" ou pressione ++ctrl+enter++ para executá-la.
 Os resultados da consulta serão exibidos na parte inferior do console.
 
-## Exportando Dados no BigQuery
+## **Exportando Dados no BigQuery**
 Com os resultado da consulta em tela, podemos salvar os dados  localmente nos formatos  CSV (Comma-Separated Values) ou JSON (JavaScript Object Notation) . Uma opção também é levar esses dados para o GCS, nos formatos CSV, JSONL, Planilha do Google ou tabela do BigQuery, como no exemplo a seguir.
 
 Usando o botão  ==SALVAR RESULTADOS==  temos as seguintes opções abaixo.
