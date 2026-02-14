@@ -1,0 +1,76 @@
+site_name: Escritório de Dados
+
+nav:
+  - Home:
+    - Olá!: index.md
+    - Tutoriais:
+      - Como acessar dados no data lake: tutoriais/como-acessar-dados.md
+      - Como configurar a conexão do PowerBI com o BigQuery: tutoriais/como-configurar-conexao-powerbi-bigquery.md
+    - Guia de desenvolvedores:
+      - Visão geral da infraestrutura: guia-desenvolvedores/visao-geral-infra.md
+      - Manual de Estilo: guia-desenvolvedores/manual-estilo.md
+      - Metadados: guia-desenvolvedores/metadados.md
+      - Desenvolvimento de pipelines local: guia-desenvolvedores/pipelines.md
+      - Deployment de pipelines na cloud: guia-desenvolvedores/pipelines-cloud.md
+      - Publicando dados com DBT: guia-desenvolvedores/dbt.md
+      - Como desenvolver pipelines no BigQuery: guia-desenvolvedores/automacao-analises.md
+      - Prefeitura-rio: guia-desenvolvedores/prefeitura-rio.md
+
+    - Governança:
+      - Governança de Acessos e Compartilhamento no Datalake: governanca/governanca.md
+    - Sobre:
+      - Contato: contato.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-outline
+        name: Mudar para tema escuro
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off
+        name: Mudar para tema claro
+  language: pt
+  font:
+    text: Lato
+  favicon: static/img/logo.png
+  logo: static/img/logo_header.png
+  features:
+    - header.autohide
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.tabs.link
+
+repo_url: https://github.com/prefeitura-rio/docs
+repo_name: prefeitura-rio/docs
+
+plugins:
+  - mkdocs-video
+
+extra:
+  version: 2.0
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/SRVQPcJb
+    - icon: fontawesome/brands/github
+      link: https://github.com/prefeitura-rio
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - mkdocs_click
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+- static/css/custom.css
