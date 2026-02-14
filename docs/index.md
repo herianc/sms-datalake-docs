@@ -1,4 +1,4 @@
-## Bem-vindo à documentação do Data lake da SMS Rio
+## Bem-vindo à documentação do Data Lake da SMS Rio
 
 
 !!! warning "Página em Construção"

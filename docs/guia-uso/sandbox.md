@@ -8,11 +8,11 @@ Pense nisso como um laboratório onde você pode trabalhar com cópias dos dados
 
 Aqui estão alguns pontos importantes sobre o Sandbox no Data Lake:
 
-1. Isolamento: O Sandbox mantém suas experiências separadas do ambiente principal, garantindo que o trabalho regular não seja interrompido.
-2. Liberdade para inovar: Como é um ambiente controlado, há mais liberdade para tentar coisas novas sem medo de cometer erros que possam ter grandes consequências.
-3. Desenvolvimento ágil: Ajuda a acelerar o desenvolvimento de projetos de dados, pois as mudanças podem ser feitas e testadas rapidamente.
-4. Segurança dos dados: Protege os dados sensíveis ou críticos ao permitir que os usuários trabalhem com amostras, versões anonimizadas ou sintéticas dos dados.
-5. Aprendizado e crescimento: É um ótimo lugar para os membros da equipe melhorarem suas habilidades, pois eles podem aprender fazendo, sem pressão.
+1. **Isolamento**: O Sandbox mantém suas experiências separadas do ambiente principal, garantindo que o trabalho regular não seja interrompido.
+2. **Liberdade para inovar**: Como é um ambiente controlado, há mais liberdade para tentar coisas novas sem medo de cometer erros que possam ter grandes consequências.
+3. **Desenvolvimento ágil**: Ajuda a acelerar o desenvolvimento de projetos de dados, pois as mudanças podem ser feitas e testadas rapidamente.
+4. **Segurança dos dados**: Protege os dados sensíveis ou críticos ao permitir que os usuários trabalhem com amostras, versões anonimizadas ou sintéticas dos dados.
+5. **Aprendizado e crescimento**: É um ótimo lugar para os membros da equipe melhorarem suas habilidades, pois eles podem aprender fazendo, sem pressão.
 
 !!! warning "Importante"
     O Sandbox não é ambiente produtivo!
@@ -28,7 +28,7 @@ Quando acreditarem que protótipo atingiu o nível de maturidade para subir para
 
 
 ## Como acessar o Sandbox?
-Você pode acessar o Sandbox a partir deste (link)[https://console.cloud.google.com/bigquery?project=rj-sms-sandbox] ou direto dentro BigQuery alterando o projeto que está conectado:
+Você pode acessar o Sandbox a partir deste [link](https://console.cloud.google.com/bigquery?project=rj-sms-sandbox 'console.cloud.google.com') ou direto dentro BigQuery alterando o projeto que está conectado:
 
 1. Clicar no nome do projeto para abrir a lista de opções disponíveis
 
@@ -63,11 +63,11 @@ Para adicioná-lo basta seguir as orientações em Primeiros Passos do link abai
 #### 1. Arquivos de Texto
 
 !!! warning "Importante"
-    ⚠️ Atenção: para carregar com sucesso um arquivo no BigQuery é necessário respeitar as limitações da ferramenta para cada tipo de arquivo. Ex:
+    Para carregar com sucesso um arquivo no BigQuery é necessário respeitar as limitações da ferramenta para cada tipo de arquivo. Ex:
     
     * caracteres permitidos nos nomes das colunas
     * como datas devem ser representadas
     * qual caracter deve ser utilizado para definir o início das casas decimais
-    Para conhecer sobre essas limitações acessar https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=pt-br, no menu da esquerda selecionar o tipo de arquivo que deseja carregar:
     
-    e buscar pela sessão Limitações
+    Para conhecer sobre essas limitações acessar a [documentação](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=pt-br 'https://cloud.google.com/bigquery/docs/'), no menu da esquerda selecionar o tipo de arquivo que deseja carregar e buscar pela sessão Limitações.
+

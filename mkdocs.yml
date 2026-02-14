@@ -11,7 +11,7 @@ nav:
         - Consultas no BigQuery: guia-uso/consultas-diretas.md
         - Acessando por outras plataformas: guia-uso/outras-formas.md
         - Ambiente Sandbox: guia-uso/sandbox.md
-  - Guia de desenvolvedores:
+  - Guia de Desenvolvedores:
       - Visão Geral da Infraestrutura: guia-desenvolvedores/infraestrutura.md
       - Contribuindo para o projeto: guia-desenvolvedores/contribuindo-projeto.md
       - Campos: guia-desenvolvedores/campos.md

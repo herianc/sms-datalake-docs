@@ -17,8 +17,11 @@ Mantemos nossas tabelas parcialmente **normalizadas**, e temos regras para quai
 ### Ordem das colunas
 
 A ordem das colunas em tabelas é padronizada para manter uma consistência no Data Lake. Nossas regras são:
-* As chaves sempre são as primeiras colunas: primeiro a chave primária, depois as chaves estrangeira em ordem descendente de abrangência. 
+
+* As chaves sempre são as primeiras colunas: primeiro a chave primária, depois as chaves estrangeira em ordem descendente de abrangência.
+ 
     * Exemplo de ordem para uma tabela de atendimento: `id_atendimento`, `id_uf`, `id_municipio`, `id_cnes`, `paciente_cpf`.
+
 * Agrupar e ordenar colunas por importância ou temas.
 
 ### Nomeação das colunas
@@ -86,15 +89,15 @@ Recomenda*se a utilização de sufixos para declaração da unidade a fim de aum
 
 A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas Gold, sendo convencionado apenas para os tiers Bronze e Prata os seguintes pontos, do mais abrangente para o mais específico:
 
-* Todo campo string não deve iniciar com espaços ou tab (\n), esses devem ser padronizados usando a função TRIM().
+* Todo campo string não deve iniciar com espaços ou tab (\n), esses devem ser padronizados usando a função `TRIM()`.
 
-* Campos de strings nullables: deverão ser padronizadas utilizando a macro process_null que garante que strings como "NaN" "None" e "" sejam transformadas em em null, segundo o formato do BigQuery.
+* Campos de strings *nullables*: deverão ser padronizadas utilizando a macro `process_null` que garante que strings como `"NaN"`, `"None"` e `""` sejam transformadas em em `null`, segundo o formato do BigQuery.
 
-* Campos numéricos: deverão conter limpeza de caracteres não numéricos segundo a macro clean_numeric_string.
+* Campos numéricos: deverão conter limpeza de caracteres não numéricos segundo a macro `clean_numeric_string`.
 
-* Campos categóricas: deverão ser padronizadas com inicial maiúscula e resto minúsculo, sem acentos seguindo macro remove_accents_upper e capitalize_first_letter nessa ordem.
+* Campos categóricas: deverão ser padronizadas com inicial maiúscula e resto minúsculo, sem acentos seguindo macro `remove_accents_upper` e `capitalize_first_letter` nessa ordem.
 
-* Campos de nome e endereço (ex: nome de estabelecimento, nome próprio e logradouro) devem ser padronizadas com letras maíusculas no inicio de cada nome e preposições em minúscula, sem acentos ou símbolos*. Utiliza*se as macros remove_accents_upper seguida de proper_estabelecimento ou proper_br. 
+* Campos de nome e endereço (ex: nome de estabelecimento, nome próprio e logradouro) devem ser padronizadas com letras maíusculas no inicio de cada nome e preposições em minúscula, sem acentos ou símbolos `-` . Utiliza-se as macros `remove_accents_upper` seguida de `proper_estabelecimento` ou `proper_br`. 
 
 * Em campos de texto livre, mantemos igual aos dados originais.
 
@@ -102,7 +105,7 @@ A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas
 
 ### Formatos de valores
 
-* **Decimal**: formato americano, i.e `.` sempre . (ponto) ao invés de `,` (vírgula).
+* **Decimal**: formato americano, i.e. sempre `.` (ponto) ao invés de `,` (vírgula).
 * **Data**: `YYYY-MM-DD`
 * **Horário (24h)**: `HH:MM:SS`
 * **Datetime (ISO-8601)**: `YYYY-MM-DDTHH:MM:SS.sssZ`
@@ -114,6 +117,6 @@ A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas
 ## Colunas de Particionamento da Tabela
 
 Uma tabela particionada é uma tabela especial dividida em segmentos, chamados de partições, que facilitam o gerenciamento e a consulta de seus dados. Ao dividir uma grande tabela em partições menores, você pode melhorar o desempenho da consulta e pode controlar os custos reduzindo o número de bytes lidos por uma consulta. Por isso, sempre recomendamos que tabelas grandes sejam particionadas. Leia mais 
-a respeito na documentação da Google Cloud.
+a respeito na [documentação](https://docs.cloud.google.com/bigquery/docs/partitioned-tables?hl=pt-br 'BigQuery - Introdução a tabelas particionadas') da Google Cloud.
 
 Em geral, o particionamento é feito sobre o valors de uma data criando-se três colunas novas cujos nomes são dados por: `ano_particao`, `mes_particao`,`data_particao` e que possuem os respectivos formatos 'YYYY', 'MM', 'YYYY-MM-DD'. 
