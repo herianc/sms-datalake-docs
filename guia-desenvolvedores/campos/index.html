@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../contribuindo-projeto/">
+      
+      
+        <link rel="next" href="../../sobre/sobre/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Campos - Data Lake SMS Rio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#campos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Data Lake SMS Rio" class="md-header__button md-logo" aria-label="Data Lake SMS Rio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Data Lake SMS Rio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Campos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guia-uso/organizacao-dados/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guia de Uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../infraestrutura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guia de desenvolvedores
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sobre/sobre/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Data Lake SMS Rio" class="md-nav__button md-logo" aria-label="Data Lake SMS Rio" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Data Lake SMS Rio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governanca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acessos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acessos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia de Uso
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia de Uso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-uso/organizacao-dados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Organização dos dados no Data Lake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acessando os dados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acessando os dados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-uso/consultas-diretas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consultas no BigQuery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-uso/outras-formas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acessando por outras plataformas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guia-uso/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ambiente Sandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia de desenvolvedores
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia de desenvolvedores
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infraestrutura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral da Infraestrutura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribuindo-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuindo para o projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quais-variaveis-manter-quais-adicionar-e-quais-remover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quais variáveis manter, quais adicionar e quais remover
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nomeacao-ordenamento-dos-campos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nomeação &amp; Ordenamento dos Campos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nomeação &amp; Ordenamento dos Campos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordem-das-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordem das colunas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nomeacao-das-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nomeação das colunas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regras-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras gerais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Regras gerais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        id_
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entidade-prefixo-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &lt;entidade&gt; (Prefixo opcional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dimensao-obrigatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &lt;dimensão&gt; (Obrigatório)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_unidade-sufixo-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &lt;_unidade&gt; (Sufixo opcional)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representacao-dos-valores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Representação dos Valores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representação dos Valores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limpando-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limpando STRINGs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-valores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos de valores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colunas-de-particionamento-da-tabela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colunas de Particionamento da Tabela
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/sobre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="campos">Campos</h1>
+<h2 id="quais-variaveis-manter-quais-adicionar-e-quais-remover">Quais variáveis manter, quais adicionar e quais remover</h2>
+<p>Mantemos nossas tabelas parcialmente <strong>normalizadas</strong>, e temos regras para quais variáveis incluirmos em produção. Elas são:</p>
+<ul>
+<li>
+<p>Remover variáveis de nomes de entidades que já estão no Data Lake. Exemplo: retirar <code>nome_estabelecimento</code> da tabela que já inclui <code>id_cnes</code>.</p>
+</li>
+<li>
+<p>Remover variáveis já utilizadas como partição. Exemplo: remover <code>ano</code> e <code>data</code> se a tabela é particionada nessas duas dimensões.</p>
+</li>
+<li>
+<p>Manter todas as chaves primárias que já vem com a tabela, mas (1) adicionar chaves estrangeiras relevantes (ex.  <code>id_municipio</code>) e (2) retirar chaves  estrangeiras irrelevantes (e.g. <code>regiao</code>).</p>
+</li>
+</ul>
+<h2 id="nomeacao-ordenamento-dos-campos">Nomeação &amp; Ordenamento dos Campos</h2>
+<h3 id="ordem-das-colunas">Ordem das colunas</h3>
+<p>A ordem das colunas em tabelas é padronizada para manter uma consistência no Data Lake. Nossas regras são:
+* As chaves sempre são as primeiras colunas: primeiro a chave primária, depois as chaves estrangeira em ordem descendente de abrangência. 
+    * Exemplo de ordem para uma tabela de atendimento: <code>id_atendimento</code>, <code>id_uf</code>, <code>id_municipio</code>, <code>id_cnes</code>, <code>paciente_cpf</code>.
+* Agrupar e ordenar colunas por importância ou temas.</p>
+<h3 id="nomeacao-das-colunas">Nomeação das colunas</h3>
+<p>Os campos, de forma geral, deve seguir o seguinte Padrão:</p>
+<p><code>[id_][&lt;entidade&gt;_][&lt;dimensão&gt;][_&lt;unidade&gt;]</code></p>
+<h3 id="regras-gerais">Regras gerais</h3>
+<p>Nomes de variáveis devem respeitar algumas regras:</p>
+<ul>
+<li>
+<p>Usar ao máximo nomes já presentes no repositório. Exemplos: estabelecimento, material, profissional_saude, episodio_assistencial</p>
+</li>
+<li>
+<p>Ser o mais intuitivo, claro e extenso possível.</p>
+</li>
+<li>
+<p>Ter todas letras minúsculas (inclusive siglas), sem acentos, conectados por _.</p>
+</li>
+<li>
+<p>Não incluir conectores como de, da, dos, e, a, em, etc.</p>
+</li>
+</ul>
+<h4 id="id_"><code>id_</code></h4>
+<p>Como regra geral, as colunas de chave primária e estrangeiras devem começar com o prefixo id  a fim de mantermos todas as colunas de chave agrupadas ao trabalhar com qualquer ferramenta de viz.
+Ex. <code>id_cnes</code>, <code>id_material</code>, <code>id_municipio</code>, <code>id_cid</code></p>
+<p>Só devem ter o prefixo id_ quando a variável representar chaves primárias de entidades no Data Lake (que tem ou que eventualmente terão uma tabela no lake).</p>
+<p>Alguns casos especiais, quando o campo é notoriamente conhecido como uma chave (ex. CPF ou CNS) o uso do prefixo pode ser descartado para fim de legibilidade.</p>
+<h4 id="entidade-prefixo-opcional"><code>&lt;entidade&gt;</code> (Prefixo opcional)</h4>
+<p>Por modelarmos os dados no estilo de fatos e dimensões, nossas tabelas não são rigorosamente normalizadas. Por isso, é comum termos na mesma tabela colunas relativas à diferentes entidades.
+Por isso adotamos o seguinte tratamento: adiciona*se o prefixo de entidade quando a entidade da coluna for diferente da entidade da tabela. Exemplos: </p>
+<ul>
+<li>
+<p>numa tabela sobre a entidade estoque, uma coluna contendo a forma farmacêutica do material seria declarada assim: material_forma_farmaceutica.</p>
+</li>
+<li>
+<p>numa tabela sobre a entidade material, características do material seriam descritas como forma_farmaceutica, posologia, grupo_terapeutico, etc.</p>
+</li>
+</ul>
+<p>No caso específico das tabelas da camada ouro, onde as tabelas estão altamente desnormalizados, recomenda-se que todas as colunas contenham o prefixo da entidade à qual pertecem. Essa prática facilita a busca das informações nas ferramentas de BI, visto que elas, geralmente, ficam ordenadas alfabeticamente.</p>
+<h4 id="dimensao-obrigatorio"><code>&lt;dimensão&gt;</code> (Obrigatório)</h4>
+<p>Nomear a dimensão é algo menos estruturado e, por isso, requer bom senso. Neste quesito a única restrição é respeitar as regras gerais listadas no início desta sessão.</p>
+<h4 id="_unidade-sufixo-opcional"><code>&lt;_unidade&gt;</code> (Sufixo opcional)</h4>
+<p>Recomenda*se a utilização de sufixos para declaração da unidade a fim de aumentar a legibilidade do campo. Lista de unidades permitidas:</p>
+<ul>
+<li><code>_nome</code>,</li>
+<li><code>_data</code></li>
+<li><code>_datahora</code>,</li>
+<li><code>_valor</code>,</li>
+<li><code>_quantidade</code>,</li>
+<li><code>_proporcao</code> (variáveis de porcentagem 0*100%),</li>
+<li><code>_taxa</code>,</li>
+<li><code>_razao</code>,</li>
+<li><code>_indicador</code> (variáveis do tipo booleano),</li>
+<li><code>_tipo</code>,</li>
+<li><code>_sigla</code></li>
+</ul>
+<h3 id="representacao-dos-valores">Representação dos Valores</h3>
+<h4 id="limpando-strings">Limpando STRINGs</h4>
+<p>A limpeza dos campos vai variar conforme o propósito de cada tabela nas camadas Gold, sendo convencionado apenas para os tiers Bronze e Prata os seguintes pontos, do mais abrangente para o mais específico:</p>
+<ul>
+<li>
+<p>Todo campo string não deve iniciar com espaços ou tab (\n), esses devem ser padronizados usando a função TRIM().</p>
+</li>
+<li>
+<p>Campos de strings nullables: deverão ser padronizadas utilizando a macro process_null que garante que strings como "NaN" "None" e "" sejam transformadas em em null, segundo o formato do BigQuery.</p>
+</li>
+<li>
+<p>Campos numéricos: deverão conter limpeza de caracteres não numéricos segundo a macro clean_numeric_string.</p>
+</li>
+<li>
+<p>Campos categóricas: deverão ser padronizadas com inicial maiúscula e resto minúsculo, sem acentos seguindo macro remove_accents_upper e capitalize_first_letter nessa ordem.</p>
+</li>
+<li>
+<p>Campos de nome e endereço (ex: nome de estabelecimento, nome próprio e logradouro) devem ser padronizadas com letras maíusculas no inicio de cada nome e preposições em minúscula, sem acentos ou símbolos<em>. Utiliza</em>se as macros remove_accents_upper seguida de proper_estabelecimento ou proper_br. </p>
+</li>
+<li>
+<p>Em campos de texto livre, mantemos igual aos dados originais.</p>
+</li>
+<li>
+<p>Analisar casos de símbolos especificos que quando retirados temos perda semântica. Ex: "AV JULIO DE AMORIM PEREIRA  S/N" → "AV JULIO DE AMORIM PEREIRA  SN" </p>
+</li>
+</ul>
+<h3 id="formatos-de-valores">Formatos de valores</h3>
+<ul>
+<li><strong>Decimal</strong>: formato americano, i.e <code>.</code> sempre . (ponto) ao invés de <code>,</code> (vírgula).</li>
+<li><strong>Data</strong>: <code>YYYY-MM-DD</code></li>
+<li><strong>Horário (24h)</strong>: <code>HH:MM:SS</code></li>
+<li><strong>Datetime (ISO-8601)</strong>: <code>YYYY-MM-DDTHH:MM:SS.sssZ</code></li>
+<li><strong>Valor nulo</strong>: <code>""</code> (csv, Stata), <code>NULL</code> (Python), <code>NA</code> (R) ou <code>.</code></li>
+<li><strong>Proporção/porcentagem</strong>: entre 0*100</li>
+<li><strong>Booleano</strong>: <code>false</code>/<code>true</code></li>
+<li><strong>Sexo</strong>: Masculino/Feminino</li>
+</ul>
+<h2 id="colunas-de-particionamento-da-tabela">Colunas de Particionamento da Tabela</h2>
+<p>Uma tabela particionada é uma tabela especial dividida em segmentos, chamados de partições, que facilitam o gerenciamento e a consulta de seus dados. Ao dividir uma grande tabela em partições menores, você pode melhorar o desempenho da consulta e pode controlar os custos reduzindo o número de bytes lidos por uma consulta. Por isso, sempre recomendamos que tabelas grandes sejam particionadas. Leia mais 
+a respeito na documentação da Google Cloud.</p>
+<p>Em geral, o particionamento é feito sobre o valors de uma data criando-se três colunas novas cujos nomes são dados por: <code>ano_particao</code>, <code>mes_particao</code>,<code>data_particao</code> e que possuem os respectivos formatos 'YYYY', 'MM', 'YYYY-MM-DD'. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../contribuindo-projeto/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Contribuindo para o projeto">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Contribuindo para o projeto
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../sobre/sobre/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Sobre">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Sobre
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/SRVQPcJb" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/prefeitura-rio" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "navigation.sections", "navigation.top", "navigation.footer", "toc.integrate", "content.tabs.link", "navigation.instant", "navigation.instant.prefetch", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": 2.0}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
