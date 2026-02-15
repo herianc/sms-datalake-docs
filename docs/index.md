@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 
-## **Bem-vindo à documentação do Data Lake da SMS Rio**
+## **Bem-vindo à documentação do Data Lake da Saúde Municipal do Rio de Janeiro**
 
 
 !!! warning "Página em Construção"
@@ -25,6 +25,6 @@ Até mais!
 
 
 
-<p align="center">
+<p align="center" fontsize="8pt">
 Este espaço é mantido pelo Comitê de Tecnologia e Inovação da SMS com muito ❤️ e ☕️.
 </p>
