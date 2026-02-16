@@ -1,4 +1,4 @@
-site_name: Data Lake SMS Rio
+site_name: Comitê de Inovação e Tecnologia (S/CIT)
 site_url: https://herianc.github.io/sms-datalake-docs
 nav:
   - Início:
@@ -23,8 +23,7 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   palette:
-    primary: blue
-    accent: orange
+    primary: custom
   font:
     text: Open Sans
     code: JetBrains Mono
@@ -57,10 +56,14 @@ plugins:
 extra:
   version: 2.0
   social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/SRVQPcJb
+    - icon: fontawesome/solid/globe
+      link: https://saude.prefeitura.rio/
     - icon: fontawesome/brands/github
       link: https://github.com/prefeitura-rio
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/SRVQPcJb
+
+
   generator: false
 # repo_url: https://github.com/prefeitura-rio/docs-sms
 # repo_name: prefeitura-rio/docs-sms

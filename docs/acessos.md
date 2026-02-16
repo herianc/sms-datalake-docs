@@ -12,8 +12,8 @@ Para solicitar acesso ao ambiente do Data Lake ou ao Painel de Farmácia Digital
 
     Complete o formulário fornecido pela equipe de governança de dados:
 
-   -  para o Data Lake SMS Rio neste form;
-   -  para o Painel de Farmácia Digital neste form.
+    -  para o Data Lake SMS Rio neste form (em breve);
+    -  para o Painel de Farmácia Digital neste form (em breve).
 
 3. **Aguarde a aprovação**
 
@@ -23,4 +23,4 @@ Para solicitar acesso ao ambiente do Data Lake ou ao Painel de Farmácia Digital
 
     Com a aprovação, você receberá suas credenciais de acesso e instruções sobre como acessar o Data Lake.
 
-Caso tenha dúvidas durante o processo, não hesite em buscar suporte da equipe de governança do Data Lake da Saúde no e-mail dit-governanca@regulacaoriorj.com.br.
+Caso tenha dúvidas durante o processo, não hesite em buscar suporte da equipe de governança do Data Lake da Saúde no e-mail [dit-governanca@regulacaoriorj.com](mailto:dit-governanca@regulacaoriorj.com 'Envie um e-mail').br.
