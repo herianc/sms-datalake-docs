@@ -1,3 +1,9 @@
+:root  > * {
+  --md-primary-fg-color:        #13335a;
+  --md-primary-fg-color--light: #eceded;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
 /* Ajusta o tamanho da logo no header */
 .md-header__button.md-logo img {
   height: 2rem;  /* Valor padrão é 1.2rem. Aumente conforme necessário */
@@ -8,4 +14,26 @@
 .md-nav__button.md-logo img {
   height: 4rem;
   width: auto;
+}
+
+.md-footer-meta__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.md-footer-meta__inner .md-copyright {
+  flex-grow: 0;
+}
+
+.custom-footer-text {
+  text-align: center;
+  font-size: .64rem;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-footer-meta__inner {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }
