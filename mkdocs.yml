@@ -68,7 +68,7 @@ extra:
       link: https://discord.gg/SRVQPcJb
 
 
-  generator: true
+  generator: false
 # repo_url: https://github.com/prefeitura-rio/docs-sms
 # repo_name: prefeitura-rio/docs-sms
 
