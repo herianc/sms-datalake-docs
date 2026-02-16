@@ -3,9 +3,9 @@ hide:
   - footer
 ---
 
-# Sobre
+# Comitê de Inovações e Tecnologia
 
-## **Comitê de Inovações e Tecnologia**
+## 
 
 O Comitê de Inovações e Tecnologia (S/CIT) é **a equipe responsável pela infraestrutura do Data Lake da SMS Rio**. Além disso, incentivamos e viabilizamos o uso de dados integrados entre as equipes e subsecretarias da SMS preservando as boas práticas de segurança da informação.
 

@@ -1,4 +1,4 @@
-## **O que é o Sandbox?**
+## O que é o Sandbox?
 
 O Sandbox, ou Caixa de Areia  , é uma área dentro do nosso BigQuery onde os usuários podem criar novos conjuntos de dados, sejam tabelas materializadas ou views, a partir de upload de arquivos, conexão com com planilhas do Google Sheets, por instrução SQL ou qualquer outra linguagem de programação a partir de bibliotecas específicas. Nele também é possível consultar e mesclar os dados que estão em produção sem o risco de qualquer tipo consequência nesse ambiente.
 
@@ -23,7 +23,7 @@ Você é responsável por garantir o backup das informações que criou.
 Teste, monitoramento e notificações automáticos: inexistente neste ambiente. 
 Caso ocorra alguma indisponibilidade ou erro nos dados, total ou parcial, não haverá qualquer mecanismo de prevenção ou alerta.
 
-Pelos motivos listados acima, não recomendamos que utilizem o Sandbox como ambiente produtivo. Isto é, não conectem no Sandbox seus reports, dashboards ou modelos de machine learning que irão ser consumidos pelos usuários finais. Pipelines de dados são vivos, inevitavelmente quebrarão e descobrir pelo usuário é uma experiência bem ruim 🫠.
+Pelos motivos listados acima, **não recomendamos que utilizem o Sandbox como ambiente produtivo**. Isto é, não conectem no Sandbox seus reports, dashboards ou modelos de machine learning que irão ser consumidos pelos usuários finais. Pipelines de dados são vivos, inevitavelmente quebrarão e descobrir pelo usuário é uma experiência bem ruim 🫠.
 Quando acreditarem que protótipo atingiu o nível de maturidade para subir para produção. Falem conosco, iremos te ajudar a subir para o ambiente produtivo 🤠. 
 
 
@@ -55,19 +55,4 @@ Para adicioná-lo basta seguir as orientações em Primeiros Passos do link abai
 
 ![Primeiros Passos](https://t9013004335.p.clickup-attachments.com/t9013004335/a441eb37-3a3f-40e6-8fc9-4eab5db7c214/bq_access_project_new.gif)
 
-
-## **Operações Básicas**
-
-### Upload de dados
-
-#### 1. Arquivos de Texto
-
-!!! warning "Importante"
-    Para carregar com sucesso um arquivo no BigQuery é necessário respeitar as limitações da ferramenta para cada tipo de arquivo. Ex:
-    
-    * caracteres permitidos nos nomes das colunas
-    * como datas devem ser representadas
-    * qual caracter deve ser utilizado para definir o início das casas decimais
-    
-    Para conhecer sobre essas limitações acessar a [documentação](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv?hl=pt-br 'https://cloud.google.com/bigquery/docs/'), no menu da esquerda selecionar o tipo de arquivo que deseja carregar e buscar pela sessão Limitações.
 

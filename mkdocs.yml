@@ -10,13 +10,18 @@ nav:
       - Acessando os dados:
         - Consultas no BigQuery: guia-uso/consultas-diretas.md
         - Acessando por outras plataformas: guia-uso/outras-formas.md
-        - Ambiente Sandbox: guia-uso/sandbox.md
-  - Guia de Desenvolvedores:
+      - Ambiente Sandbox:
+        - O que é? : guia-uso/sandbox.md
+        - Operações Básicas: guia-uso/sandbox-operacoes-basicas.md
+  - Guia de Desenvolvimento:
       - Visão Geral da Infraestrutura: guia-desenvolvedores/infraestrutura.md
       - Contribuindo para o projeto: guia-desenvolvedores/contribuindo-projeto.md
       - Campos: guia-desenvolvedores/campos.md
-  - Sobre: sobre/sobre.md
-
+  - Sobre: 
+      - Comitê de Inovação e Tecnologia: sobre/cit.md
+      - Produtos: 
+        - Histórico Clínico Integrado: sobre/hci.md
+        - Farmácia Digital:  sobre/farmacia-digital.md
 theme:
   name: material
   custom_dir: overrides 
@@ -28,7 +33,6 @@ theme:
     text: Open Sans
     code: JetBrains Mono
   language: pt
-  copyright: Copyright &copy; 2026 Comitê de Inovação e Tecnologia
   features:
     - header.autohide
     - navigation.sections
@@ -64,7 +68,7 @@ extra:
       link: https://discord.gg/SRVQPcJb
 
 
-  generator: false
+  generator: true
 # repo_url: https://github.com/prefeitura-rio/docs-sms
 # repo_name: prefeitura-rio/docs-sms
 
