@@ -1,5 +1,3 @@
-## O que é o Sandbox?
-
 O Sandbox, ou Caixa de Areia  , é uma área dentro do nosso BigQuery onde os usuários podem criar novos conjuntos de dados, sejam tabelas materializadas ou views, a partir de upload de arquivos, conexão com com planilhas do Google Sheets, por instrução SQL ou qualquer outra linguagem de programação a partir de bibliotecas específicas. Nele também é possível consultar e mesclar os dados que estão em produção sem o risco de qualquer tipo consequência nesse ambiente.
 
 O ambiente do Sandbox dentro do BigQuery é destinado aos atores internos e externos à Secretaria de Saúde para testarem com autonomia e agilidade. É um espaço seguro onde os analistas e cientistas de dados podem experimentar com os dados, testar novas ideias ou modelos sem o risco de afetar os dados principais ou os sistemas de produção.

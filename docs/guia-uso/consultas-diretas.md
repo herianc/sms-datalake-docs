@@ -62,6 +62,6 @@ Os resultados da consulta serão exibidos na parte inferior do console.
 ## **Exportando Dados no BigQuery**
 Com os resultado da consulta em tela, podemos salvar os dados  localmente nos formatos  CSV (Comma-Separated Values) ou JSON (JavaScript Object Notation) . Uma opção também é levar esses dados para o GCS, nos formatos CSV, JSONL, Planilha do Google ou tabela do BigQuery, como no exemplo a seguir.
 
-Usando o botão  ==SALVAR RESULTADOS==  temos as seguintes opções abaixo.
+Usando o botão  **SALVAR RESULTADOS** temos as seguintes opções abaixo.
 
 ![Opções de exportação](../assets/acesso-bq-download-options.png)

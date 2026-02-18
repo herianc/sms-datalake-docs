@@ -3,10 +3,10 @@ site_url: https://herianc.github.io/sms-datalake-docs
 nav:
   - Início:
     - Apresentação: index.md
+    - Data Lake: datalake.md
     - Governança: governanca.md
     - Acessos: acessos.md
   - Guia de Uso: 
-      - Organização dos dados no Data Lake : guia-uso/organizacao-dados.md
       - Acessando os dados:
         - Consultas no BigQuery: guia-uso/consultas-diretas.md
         - Acessando por outras plataformas: guia-uso/outras-formas.md
