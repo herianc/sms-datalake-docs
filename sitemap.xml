@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/acessos/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
+    </url>
+    <url>
+         <loc>https://herianc.github.io/sms-datalake-docs/datalake/</loc>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/governanca/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-desenvolvedores/campos/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-desenvolvedores/contribuindo-projeto/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-desenvolvedores/infraestrutura/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-uso/consultas-diretas/</loc>
-         <lastmod>2026-02-16</lastmod>
-    </url>
-    <url>
-         <loc>https://herianc.github.io/sms-datalake-docs/guia-uso/organizacao-dados/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-uso/outras-formas/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-uso/sandbox-operacoes-basicas/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/guia-uso/sandbox/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/sobre/cit/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/sobre/farmacia-digital/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
     <url>
          <loc>https://herianc.github.io/sms-datalake-docs/sobre/hci/</loc>
-         <lastmod>2026-02-16</lastmod>
+         <lastmod>2026-02-18</lastmod>
     </url>
 </urlset>
