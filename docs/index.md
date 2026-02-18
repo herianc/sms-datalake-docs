@@ -20,11 +20,12 @@ Queremos convidar você para se juntar a nós! Se tiver alguma dúvida, sugestã
 
 Não hesite em nos procurar. Sua opinião é muito importante para nós!
 
-Até mais!
 
+<br>
+<br>
+<br>
+<br>
 
-
-
-<p align="center" fontsize="8pt">
+<p align="center">
 Este espaço é mantido pelo Comitê de Tecnologia e Inovação da SMS com muito ❤️ e ☕️.
 </p>

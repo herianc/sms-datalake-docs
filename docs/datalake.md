@@ -26,3 +26,22 @@ Dentro do Big Query, estas camadas são facilmente identificados pelos prefixos 
 ![Ouro](assets/ouro.png){ height="200" }
 
 
+## **Visão Geral da Infraestrutura**
+
+O Data Lake da Saúde é composto por várias ferramentas e tecnologias que trabalham juntas para coletar, armazenar, gerenciar e analisar esses dados. Cada componente tem um papel específico e, quando combinados, eles criam um ecossistema poderoso para o tratamento de grandes volumes de informações. Vamos explorar os principais componentes que formam um Data Lake eficiente:
+
+1. **Orquestração com Prefect**: Essencial para garantir que as tarefas sejam executadas de forma ordenada e eficaz. Ele  é a espinha dorsal da automação de fluxos de trabalho, assegurando que os processos de ELT (Extract, Load, Transform) sejam executados de maneira confiável e escalável.
+
+2. **Data Warehouse com BigQuery**: O lugar onde os dados são armazenados de maneira estruturada e prontos para análise. Nele você pode realizar consultas SQL de alta velocidade e armazenar dados transformados para análises mais recorrentes.
+
+3. **Construção e Monitoramento com DBT**: Ferramenta  responsável pela transformação (T do ELT) dos dados dentro do Data Warehouse e pelo monitoramento dos mesmos. Ao trazer o conceito de versionamento de código e testes automatizados ao processo de transformação dos dados, proporciona uma camada adicional de governança e qualidade aos dados no Data Warehouse.
+
+4. **Notificações de Falhas via Discord**: Sistema de alerta que notifica a equipe responsável caso ocorram problemas nos processos de dados. Ele oferece uma comunicação imediata sobre quaisquer interrupções ou falhas, permitindo uma rápida resposta e resolução.
+
+5. **Análise de Dados com Python, R, Power BI e Looker**: Conjunto de ferramentas que permitem aos usuários acessar, analisar e visualizar os dados armazenados no Data Lake.
+
+Cada um desses componentes desempenha um papel vital na construção para que o Data Lake seja robusto e funcional. Juntos, eles oferecem uma infraestrutura completa para que a SMS possa aproveitar ao máximo seus dados
+
+
+![Arquitetura - Visão Alto Nível](assets/arquitetura-alto-nivel.png)
+

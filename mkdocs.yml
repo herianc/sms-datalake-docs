@@ -14,7 +14,6 @@ nav:
         - O que é? : guia-uso/sandbox.md
         - Operações Básicas: guia-uso/sandbox-operacoes-basicas.md
   - Guia de Desenvolvimento:
-      - Visão Geral da Infraestrutura: guia-desenvolvedores/infraestrutura.md
       - Contribuindo para o projeto: guia-desenvolvedores/contribuindo-projeto.md
       - Campos: guia-desenvolvedores/campos.md
   - Sobre: 
